@@ -1,0 +1,47 @@
+//MAIN CLASS
+
+
+package playwithconstructor;
+
+public class Playwithconstructor 
+{
+
+  
+    public static void main(String[] args) 
+    {
+       int i;
+       Tiger abc = new Tiger(10,20);
+       //abc.x = 10;
+       //abc.y = 20;
+       i = abc.add();
+        
+        System.out.println(i);
+    }
+    
+}
+
+
+//Tiger Class
+
+
+package playwithconstructor;
+
+public class Tiger 
+{
+    int x,y;
+    public Tiger()
+    {
+        System.out.println("Hello World!");
+    }
+    
+    public Tiger(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+    
+    public int add()
+    {
+        return x+y;
+    }
+}
